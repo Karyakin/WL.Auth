@@ -15,6 +15,7 @@ using WL.Auth.MVC.Models;
 
 namespace WL.Auth.MVC.Controllers
 {
+   // [Authorize]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -23,7 +24,7 @@ namespace WL.Auth.MVC.Controllers
         {
             _logger = logger;
         }
-       // [Authorize]
+        //[Authorize]
         public IActionResult Index()
         {
             return View();
